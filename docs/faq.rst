@@ -15,7 +15,7 @@ I get a "``Site matching query does not exist.``" exception
 -----------------------------------------------------------
 
 This means that your settings.SITE_ID value is incorrect. See the instructions
-on SITE_ID in the [Installation section](http://docs.django-userena.org/en/latest/installation.html).
+on SITE_ID in the [Installation section](https://django-userena.readthedocs.io/en/latest/installation.html).
 
 
 <ProfileModel> is already registered exception
@@ -29,12 +29,12 @@ follows:
 
     # Unregister userena's
     admin.site.unregister(YOUR_PROFILE_MODEL)
-                
+
     # Register your own admin class and attach it to the model
     admin.site.register(YOUR_PROFILE_MODEL, YOUR_PROFILE_ADMIN)
 
 Can I still add users manually?
--------------------------------           
+-------------------------------
 Yes, but Userena requires there to be a `UserenaSignup` object for every
 registered user. If it's not there, you could receive the following error:
 
